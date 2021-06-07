@@ -2,4 +2,10 @@
     <string name="app_name">MUSAPP</string>
     <string name="log_in">Log In</string>
     <string name="sign_up">Sign Up</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="email">EMAIL</string>
+    <string name="validate_password">VALIDATE PASSWORD</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+
 </resources>
