@@ -26,6 +26,12 @@
         android:text="@string/username"
         android:textStyle="bold" />
 
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:background="?android:attr/listDivider" />
+
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="wrap_content"
@@ -35,6 +41,12 @@
         android:text="@string/email"
         android:textStyle="bold" />
 
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:background="?android:attr/listDivider" />
+
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="wrap_content"
@@ -43,6 +55,12 @@
         android:inputType="textVisiblePassword"
         android:text="@string/password"
         android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:background="?android:attr/listDivider" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
