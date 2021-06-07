@@ -11,9 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="@string/app_name"
+        android:text="@string/travelcoin"
         android:textColor="@color/black"
-        android:textSize="75dp"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
     <Button
@@ -30,7 +30,6 @@
         android:backgroundTint="@android:color/transparent"
         android:text="@string/sign_up"
         android:textStyle="bold" />
-
 
 
 </LinearLayout>

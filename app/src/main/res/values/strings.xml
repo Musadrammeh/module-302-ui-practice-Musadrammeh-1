@@ -7,5 +7,6 @@
     <string name="email">EMAIL</string>
     <string name="validate_password">VALIDATE PASSWORD</string>
     <string name="create_account">CREATE ACCOUNT</string>
+    <string name="travelcoin">TRAVELCOIN</string>
 
 </resources>
