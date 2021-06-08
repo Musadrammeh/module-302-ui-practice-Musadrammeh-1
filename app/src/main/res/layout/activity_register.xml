@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/uibackground"
@@ -23,14 +23,11 @@
         android:layout_height="wrap_content"
         android:ems="15"
         android:inputType="textPersonName"
-        android:text="@string/username"
+        android:textColor="@color/black"
+        android:hint="@string/username"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:textStyle="bold" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="wrap_content"
-        android:layout_height="14dp"
-        android:background="?android:attr/listDivider" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -38,14 +35,9 @@
         android:layout_height="wrap_content"
         android:ems="15"
         android:inputType="textEmailAddress"
-        android:text="@string/email"
+        android:hint="@string/email"
+        android:textColor="@color/black"
         android:textStyle="bold" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="wrap_content"
-        android:layout_height="14dp"
-        android:background="?android:attr/listDivider" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
@@ -53,14 +45,8 @@
         android:layout_height="wrap_content"
         android:ems="15"
         android:inputType="textVisiblePassword"
-        android:text="@string/password"
+        android:hint="@string/password"
         android:textStyle="bold" />
-
-    <View
-        android:id="@+id/divider3"
-        android:layout_width="wrap_content"
-        android:layout_height="14dp"
-        android:background="?android:attr/listDivider" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -68,7 +54,8 @@
         android:layout_height="wrap_content"
         android:ems="15"
         android:inputType="textVisiblePassword"
-        android:text="@string/validate_password"
+        android:hint="@string/validate_password"
+
         android:textStyle="bold" />
 
     <Button
@@ -77,6 +64,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/transparent"
         android:text="@string/create_account"
+        android:layout_marginTop="40dp"
         android:textStyle="bold" />
 
 
