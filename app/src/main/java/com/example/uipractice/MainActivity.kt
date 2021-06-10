@@ -5,8 +5,11 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import java.sql.Time
 import java.text.SimpleDateFormat
+import java.time.Clock
 import java.util.*
+import java.util.concurrent.TimeUnit
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        textViewTime = findViewById(R.id.timeTextView)
         textViewDate = findViewById(R.id.dateTextView)
         setDateAndTime()
 
@@ -31,8 +35,13 @@ class MainActivity : AppCompatActivity() {
         val today = Date()
         val dateFormat = SimpleDateFormat("dd MMMM yyyy")
         val formatedDate = dateFormat.format(today)
+
+        val timeToShow = timeFormat.format(CurrentDate)
         Log.i("TAG", "$formatedDate")
+
 
         textViewDate?.text = formatedDate
     }
+
+
 }
