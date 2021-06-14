@@ -8,5 +8,7 @@
     <string name="validate_password">VALIDATE PASSWORD</string>
     <string name="create_account">CREATE ACCOUNT</string>
     <string name="travelcoin">TRAVELCOIN</string>
+    <string name="name_cannot_be_empty">nameCannotBeEmpty</string>
+    <string name="invalid_email_adress">invalidEmailAdress</string>
 
 </resources>

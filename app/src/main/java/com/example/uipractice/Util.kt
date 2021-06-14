@@ -10,6 +10,7 @@ object Util {
 
     fun isEmailValid(emailAdress: String): Boolean =
         emailAdress.isNotBlank()&& Patterns.EMAIL_ADDRESS.matcher(emailAdress).matches()
+
     fun isPasswordValid(password: String): Boolean =
         password.length >= MIN_PASSWORD_LENGTH
 

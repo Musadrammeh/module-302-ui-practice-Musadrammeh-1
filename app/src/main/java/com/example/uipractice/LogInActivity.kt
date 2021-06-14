@@ -26,11 +26,12 @@ class LogInActivity : AppCompatActivity() {
         }
 
         private fun ShowErrorMessageForEmail(){
+            binding.editTextName.error=getString(R.string.invalid_email_adress)
 
         }
 
         private fun showErrorMessageForPassword(){
-
+            binding.editTextName.error=getString(R.string.password_must_have_minimum_{6}_characters)
         }
 
 
