@@ -1,10 +1,14 @@
 package com.example.uipractice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.renderscript.ScriptGroup
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.example.uipractice.databinding.ActivityMainBinding
 import java.sql.Time
 import java.text.SimpleDateFormat
 import java.time.Clock
@@ -12,35 +16,41 @@ import java.util.*
 import java.util.concurrent.TimeUnit
 
 
-class MainActivity : AppCompatActivity() {
-    private var buttonSignup: Button? = null
-    private var buttonLogin: Button? = null
-    private var textViewTime: TextView? = null
-    private var textViewDate: TextView? = null
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
-
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        textViewTime = findViewById(R.id.timeTextView)
-        textViewDate = findViewById(R.id.dateTextView)
         setDateAndTime()
-
+        binding.buttonSignUp.setOnClickListener(this)
+        binding.buttonLogin.setOnClickListener(this)
 
     }
 
     private fun setDateAndTime(){
-        val today = Date()
-        val dateFormat = SimpleDateFormat("dd MMMM yyyy")
-        val formatedDate = dateFormat.format(today)
+        val currentDate = Date()
+        val timeFormat = SimpleDateFormat("dd MMMM yyyy")
+        val dateFormat = SimpleDateFormat ("hh:mm a")
 
-        val timeToShow = timeFormat.format(CurrentDate)
-        Log.i("TAG", "$formatedDate")
+        val timeToShow = timeFormat.format(currentDate)
+        binding.textViewTime.text = timeToShow
 
+        val dateToShow = dateFormat.format(currentDate)
+        binding.textViewDate.text = dateToShow
+    }
 
-        textViewDate?.text = formatedDate
+    override fun OnClick(v: View?){
+        val classToGo = when (v){
+            binding.buttonLogin -> LogInActivity::class.java
+            else -> SignUpActivity::class.java
+        }
+        val intent = Intent(this,classToGo)
+        startActivity(intent)
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
     }
 
 
