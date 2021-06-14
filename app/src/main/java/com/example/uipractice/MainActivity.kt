@@ -37,21 +37,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val dateFormat = SimpleDateFormat ("hh:mm a")
 
         val timeToShow = timeFormat.format(currentDate)
-        binding.textViewTime.text = timeToShow
+        binding.timeTextView.text = timeToShow
 
         val dateToShow = dateFormat.format(currentDate)
-        binding.textViewDate.text = dateToShow
+        binding.dateTextView.text = dateToShow
     }
 
-    override fun OnClick(v: View?){
+    override fun onClick(v: View?){
         val classToGo = when (v){
             binding.buttonLogin -> LogInActivity::class.java
-            else -> SignUpActivity::class.java
+            else -> RegisterActivity::class.java
         }
         val intent = Intent(this,classToGo)
         startActivity(intent)
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
     }
+
+
 
 
 }

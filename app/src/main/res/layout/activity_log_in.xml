@@ -19,25 +19,28 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
         android:inputType="textPersonName"
-        android:text="@string/username"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/username"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/editPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
         android:inputType="textVisiblePassword"
-        android:text="@string/password"
+        android:hint="@string/password"
+        android:layout_marginBottom="20dp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
@@ -52,6 +55,5 @@
         android:layout_height="30sp"
         android:layout_marginTop="40dp"
         app:srcCompat="@drawable/facebook" />
-
 
 </LinearLayout>

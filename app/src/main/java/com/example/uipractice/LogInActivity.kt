@@ -18,22 +18,18 @@ class LogInActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        binding.buttonLogin.SetOnClickListener{
+        binding.buttonLogin.setOnClickListener{
 
         }
-        override fun finish(){
+    }
 
-        }
+    private fun showErrorMessageForEmail(){
+        binding.editEmail.error=getString(R.string.invalid_email_adress)
 
-        private fun ShowErrorMessageForEmail(){
-            binding.editTextName.error=getString(R.string.invalid_email_adress)
+    }
 
-        }
-
-        private fun showErrorMessageForPassword(){
-            binding.editTextName.error=getString(R.string.password_must_have_minimum_{6}_characters)
-        }
-
+    private fun showErrorMessageForPassword(){
+        binding.editPassword.error=getString(R.string.invalid_password)
 
     }
 }

@@ -18,7 +18,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
@@ -30,17 +30,18 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/editEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
         android:inputType="textEmailAddress"
         android:hint="@string/email"
+        android:layout_marginBottom="20dp"
         android:textColor="@color/black"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/editPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
@@ -48,18 +49,8 @@
         android:hint="@string/password"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="15"
-        android:inputType="textVisiblePassword"
-        android:hint="@string/validate_password"
-
-        android:textStyle="bold" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonCreateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/transparent"
